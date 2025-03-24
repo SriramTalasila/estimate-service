@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: Estimate Application
+  datasource:
+    url: jdbc:postgresql://192.168.0.107:5432/estimatedb
+    username: estimateapp
+    password:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none  # Options: none, validate, update, create, create-drop
+    show-sql: true      # Display SQL queries in the logs
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
